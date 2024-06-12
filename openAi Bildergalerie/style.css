@@ -1,0 +1,23 @@
+
+
+.gallery-image{
+    /* Sanfte Übergänge bei Hover-Effekt */
+    display: flex;
+  flex-wrap: wrap; /* Bilder umbrechen, wenn der Container voll ist */
+  justify-content: center; /* Zentriert die Bilder horizontal */
+
+}
+.gallery-image img {
+    width: 200px; /* Feste Breite für alle Bilder */
+    height: 200px; /* Feste Höhe für alle Bilder */
+    object-fit: cover; /* Bild wird zugeschnitten, um den Rahmen auszufüllen */
+    margin: 10px; /* Abstand zwischen den Bildern */
+    border: 2px solid #ccc; /* Rahmen um die Bilder */
+    border-radius: 5px; /* Abgerundete Ecken */
+    transition: transform 0.2s;
+}
+  
+  .gallery-image img:hover {
+    transform: scale(1.05); /* Vergrößerung bei Hover */
+    border-color: #333; /* Rahmenfarbe bei Hover ändern */
+  }
